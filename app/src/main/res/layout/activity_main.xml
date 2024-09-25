@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- CheckBox to select favorite book -->
+    <CheckBox
+        android:id="@+id/checkbox_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mark as Favorite" />
+
+    <!-- RadioGroup for selecting genre -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Genre" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radio_fiction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiction" />
+
+        <RadioButton
+            android:id="@+id/radio_nonfiction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Non-fiction" />
+
+        <RadioButton
+            android:id="@+id/radio_mystery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mystery" />
+    </RadioGroup>
+
+    <!-- RatingBar for rating the book -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rate the Book" />
+
+    <RatingBar
+        android:id="@+id/rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1.0"
+        android:rating="0" />
+
+    <!-- SeekBar for setting the difficulty level -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Reading Difficulty" />
+
+    <SeekBar
+        android:id="@+id/seekBar_difficulty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="10" />
+
+    <!-- TextView to display the selected difficulty level -->
+    <TextView
+        android:id="@+id/text_difficulty_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Difficulty: 0" />
+
+    <!-- Switch to enable or disable notifications -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable Notifications" />
+
+    <Switch
+        android:id="@+id/switch_notifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notifications" />
+
+</LinearLayout>
